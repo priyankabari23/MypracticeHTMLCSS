@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Form</h2>
+    <form action="./serverside.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <br>
+            <br>
+             4
+             
+        <label for="firstname">Name:</label>
+        <input type="text" id="firstname" name="fname" placeholder="Enter your name" size="40"
+            title="Maximum 5 characters allowed" pattern="^[A-Za-z]+$" required />
+        <br>
+        <br>
+        <label for="Lastname">Lastname:</label>
+        <input type="text" id="lastname" name="lname" placeholder="Enter your Lastname">
+        <br>
+        <br>
+        <label for="emailid">emailid:</label>
+        <input type="email" id="emailid" name="mail" pattern=" ^[A-Za-z0-9+_.-]+@(.+)$">
+    
+        <br>
+        <br>
+        <label for="password">password:</label>
+        <input type="password" id="password" name="password">
+    </fieldset>
+        <br>
+        <br>
+        <label for="female">female</label>
+        <input type="radio" name="Gender" id="female" value="female">
+
+        <label for="male">male</label>
+        <input type="radio" name="Gender" id="male" value="male">
+        <label for="other">other</label>
+        <input type="radio" name="Gender" id="other" value="other">
+        <br>
+        <br>
+        Select the hobbies:
+        <br>
+        <label for=""> Reading</label>
+        <input type="checkbox" name="Reading" id="checkbox1">
+        <br>
+        <label for=""> Singing</label>
+        <input type="checkbox" name="Singing" id="checkbox2">
+        <br>
+        <label for=""> Dancing</label>
+        <input type="checkbox" name="Dancing" id="checkbox3">
+        <br>
+        <label for=""> Watching tv</label>
+
+        <input type="checkbox" name="Watching" id="checkbox4">
+        <br>
+        <label for=""> Travelling</label>
+
+        <input type="checkbox" name="Travelling" id="checkbox5">
+        <br>
+        <br>
+
+        <label for="color">select color</label>
+        <input type="color" name="color" id="color">
+        <br>
+        <br>
+        <label for="date">select date</label>
+        <input type="date" name="date" id="date">
+        <br>
+        <br>
+        <label for="datetime">select datetime</label>
+        <input type="datetime-local" name="datetime" id="datetime">
+        <br>
+        <br>
+        <label for="time">select time</label>
+        <input type="time" name="time" id="time">
+        <br>
+        <br>
+        <label for="file">select file</label>
+        <input type="file" name="files" id="file" multiple>
+        <br>
+        <br>
+        <input type="number" name="roll" min="20" step="5">
+        <br>
+        <br>
+        <label for="quantity">Enter quantity</label>
+        <input type="number" name="quantity" id="quantity">
+        <br>
+        <br>
+
+        <label for="range">Give us ratings</label>
+        <input type="range" name="ratings" id="rantings" min="0" max="5">
+        <br>
+        <br>
+        <label for="telephone">Enter telephone number</label>
+        <input type="tel" name="telephone" id="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+        <br>
+        <br>
+        <label for="state">select your state</label>
+        <select name="state" id="state" multiple>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Jammu kashmir">Jammu kashmir</option>
+            <option value="Andhra pradesh">Andhra pradesh</option>
+            <option value="Karnataka" selected>Karnataka</option>
+            <option value="Himachal pradesh">Himachal pradesh</option>
+        </select>
+        <br>
+        <br>
+        <label for="address">Address:</label>
+        <textarea name="address" id="address" cols="5" rows="5">Add address here</textarea>
+        <br>
+        <br>
+        <label for="">Add skills</label>
+        <input list="skills" name="skills"/>
+      <datalist id="skills">
+        <option value="cpp">cpp</option>
+        <option value="Java">Java</option>
+        <option value="c">c</option>
+        <option value="python">python</option>
+        <option value="Javascript">Javascript</option>
+    </datalist>
+    <br>
+    <br>
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        <input type="button" value="Sample button" onclick="alert('This is alert')">
+        <input type="button" value="Click twice" ondblclick="console.log('button click twice')">
+
+    </form>
+</body>
+
+</html>

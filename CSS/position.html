@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Document</title>
+    <style>
+        .div1 {
+            background-color: blueviolet;
+            height: 100px;
+            width: 300px;
+            border: 3px solid blue;
+            top: 10px;
+            left: 100px;
+            position: relative;
+
+
+        }
+        .fixedexample{
+            background-color: rgba(214, 226, 43, 0.822);
+            height: 100px;
+            width: 300px;
+            border: 3px solid blue;
+            bottom: 0;
+            right: 0;
+            position: fixed;
+            
+        }
+        .absoluteExample{
+            background-color: rgba(226, 43, 43, 0.822);
+            height: 500px;
+            width: 500px;
+            border: 3px solid rgb(81, 0, 255);
+            position: relative;
+        }
+
+        
+        .innerDivForAbsolute{
+            background-color: rgba(226, 43, 153, 0.822);
+            height: 100px;
+            width: 100px;
+            border: 3px solid rgb(81, 0, 255);
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas odit fugit velit laborum placeat possimus sed
+        inventore doloribus, impedit mollitia optio porro assumenda atque? Natus voluptatibus sequi blanditiis
+        molestiae? Possimus.</p>
+    <div class="div1">this is div</div>
+    <div class="fixedexample">Example for ffixed position</div>
+    <br><br><br><br><br>
+    <div class="absoluteExample"></div>
+    <div class="innerDivForAbsolute"></div>
+</body>
+
+</html>

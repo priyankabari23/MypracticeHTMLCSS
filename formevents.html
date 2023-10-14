@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Events</title>
+</head>
+<body>
+    <form action="" onsubmit="alert('Form submit')" onreset="console.log('form reset');"</form>
+    <label for="">Blur and focus example</label>
+    <input type="text" name="" id="" onblur="console.log('Input fiels is blurred now')" onfocus="console.log('input field is focused')">
+    <br>
+    <br>
+    <label for="">onchange example</label>
+    <input type="text" name="" id="" onchange="console.log('value changed')" oninput="console.log('user added input')">
+    <br>
+    <br>
+    <input type="text" name="fname" title="Number and special chracters are not allowed" required oninvalid="console.log('invalid value')"/>
+    <input type="submit" value="submit" />
+    <input type="reset"  value="reset" />
+
+</body>
+</html>

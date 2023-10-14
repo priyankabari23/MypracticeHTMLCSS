@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Attribute Selectors</title>
+    <style>
+        /*a[target] {
+            color: red;
+        }*/
+        a[target='_blank'] {
+            color: blue;
+        }
+
+        /*p[class]{
+        color: red;
+       }*/
+        p[class~='sample'] {
+
+            border: 2px solid gold;
+        }
+        p[class|='Lorem']{
+            border:5px solid red;
+        }
+        p[title^='panda']{
+            background-color: yellow;
+            
+        }
+        p[title$='happy']{
+           text-decoration: line-through;
+        }
+        p[title*='app']{
+            color: violet;
+            font-size: 30px;
+        }
+    </style> 
+
+     
+</head>
+
+<body>
+    <a href="">Sample1</a>
+    <a href="" target="_self">sample2</a>
+    <a href="" target="_parent">sample 3</a>
+    <a href="" target="_blank">sample 4</a>
+    <p class="check sample"  title="panda">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem consequuntur
+        ipsum labore corporis
+        iste molestiae voluptatem eligendi error pariatur. Minus dignissimos quod officia adipisci, fuga dolorem quis
+        repellat eos.</p>
+
+    <p class="check"  title="panda-happy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem consequuntur ipsum
+        labore corporis
+        iste molestiae voluptatem eligendi error pariatur. Minus dignissimos quod officia adipisci, fuga dolorem quis
+        repellat eos.</p>
+    <p class="Lorem" title="happy-panda">Lorem,ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus autem consequuntur ipsum
+        labore corporis
+        iste molestiae voluptatem eligendi error pariatur. Minus dignissimos quod officia adipisci, fuga dolorem quis
+        repellat eos.</p>
+</body>
+
+</html>

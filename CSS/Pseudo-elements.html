@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Psuedo Elements</title>
+    <style>
+        #para::first-line{
+            color:red;
+        }
+        #para::first-letter{
+            color: chartreuse;
+            font-size: 30px;
+        }
+        #para2::before{
+            content: '*****';
+        }
+        #para2::after{
+            content:'@@@@@@';
+        }
+        ol li::marker{
+            color: crimson;
+            font-size: 30px;
+        }
+        p::selection{
+            background-color: pink;
+            color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates consequatur expedita quasi beatae dolore
+        dolorum, sapiente rem quis aspernatur pariatur officia minima maiores omnis, voluptate nam distinctio eligendi
+        laboriosam esse? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit atque vitae illo qui
+        neque laudantium vero eaque ad! Officia ullam itaque atque doloremque delectus voluptatibus cumque, natus
+        reprehenderit explicabo commodi.
+    </p>
+    <p id="para2">This is Paragraph</p>
+    <ol>
+        <li class="aa">one</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ol>
+    <ul>
+        <li>one</li>
+        <li>Two</li>
+        <li>Three</li>
+    </ul>
+</body>
+
+</html>
