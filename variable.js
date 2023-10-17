@@ -7,3 +7,7 @@ let myFirstName='Advik';
 
  const cityname='pune';
  console.log('cityname' ,cityname);
+  var x=50;
+    var y=25;
+    var z=x+y;
+    console.log(z);
