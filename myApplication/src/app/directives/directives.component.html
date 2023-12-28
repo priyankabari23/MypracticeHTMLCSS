@@ -1,0 +1,51 @@
+    <!--  <p>directives works!</p>
+<div *ngIf="isShow">
+    <p>{{city}}</p>
+</div>
+<div>{{cars}}</div>
+<div *ngFor="let carName of cars">
+    {{carName}}
+
+</div>
+<div class="div-container" *ngIf="showDiv"></div><br>
+
+<button (click)="toggle()">toggle</button>
+<div [ngSwitch]="fruit">
+    <div *ngSwitchCase="'mango'">my fav fruit is mango</div>
+    <div *ngSwitchCase="'apple'">my fav fruit is apple</div>
+    <div *ngSwitchCase="'banana'">my fav fruit is banana</div>
+</div>
+<div class="info">
+    I like pune
+</div> 
+<div [ngClass]="{'adminUser' : user =='Admin',
+                  'mentorUser' : user=='Mentor',
+                  'studentUser' :user=='student'}">
+welcome to app</div>
+
+<div [class.adminUser]="user =='Admin'"
+     [class.mentorUser]="user =='Mentor'" 
+     [class.studentUser]="user =='student'">
+     welcome
+</div>
+<div style="color:blueviolet">Welcome</div>
+<div [ngStyle] ="user == 'Admin' ? {'background-color': 'yellow'}:{'background-color':'black'}">welcome</div>
+<button (click)="getdata()">Get data</button> -->
+
+<div class="table-cont">
+    <input type="search" [(ngModel)]="searchText">
+    <h1>Table</h1>
+        <Table>
+            <tr>
+                <th *ngFor=" let headings of tableHeading ">{{headings}}</th>
+            </tr>
+             <tr *ngFor=" let data of tableData | search :searchText ">
+                <td>{{data.name}}</td>
+                <td>{{data.contact}}</td>
+                <td>{{data.city}}</td>
+                <td>{{data.age}}</td>
+                
+
+             </tr>
+        </Table>
+    </div>

@@ -1,0 +1,23 @@
+<div>
+    <form class="form-container" #loginForm = "ngForm" (ngSubmit)="submit(loginForm)">
+        <h2>Login</h2>
+        <div>
+            <label > User Name</label><br>
+            <input type="text" ngModel name="userName" #userName="ngModel" required ><br>
+            
+            <span class="error" *ngIf="userName.touched && userName. errors?.['required']" >Name is required</span>
+        </div>
+        <div>
+            <label > Password</label><br>
+            <input type="text" ngModel name="password" #password="ngModel" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,12}$"><br>
+            <span class="error" *ngIf="password.touched && password.errors?.['required']">Password is required</span>
+            <span *ngIf="password.errors?.['pattern']">pattern not match</span>
+        </div>
+         <div>
+            <button (click)="submit(loginForm)"[disabled]="!loginForm.valid">Submit</button>
+        </div> 
+        <div>
+            Not an Acount? <a routerLink="/signUpForm"><b>Click here to Create Acount...</b></a>
+        </div>
+    </form>
+</div>

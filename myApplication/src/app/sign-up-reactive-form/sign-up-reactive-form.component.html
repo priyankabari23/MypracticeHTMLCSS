@@ -1,0 +1,30 @@
+
+  
+  <div>
+    <form [formGroup]="signUpForm">
+        <label>Name</label><br>
+        <input type="text" formControlName="name"><br>
+        <span class="err" *ngIf="signUpForm.get('name')?.hasError('required ')  && signUpForm.get('name')?.touched">Name is Required </span>
+         
+       
+        <br>
+        <label>Mob no</label><br>
+        <input type="text" formControlName="mobile"><br>
+        <span class="err" *ngIf="signUpForm.get('mobile')?.hasError('maxlength')">Maximum 10 integer required</span><br>
+        
+        <label>pancard</label><br>
+        <input type="text" formControlName="pancard"><br>
+        <span class="err" *ngIf="signUpForm.get('pancard')?.hasError('pattern')&&!signUpForm.get('pancard')?.hasError('maxlength')"
+        >invalid pan number</span>
+        <br>
+        <span class="err" *ngIf="signUpForm.get('pancard')?.hasError('maxlength')">maxlength is 10</span>
+        <br>
+
+        <label>Email</label><br>
+        <input type="text" formControlName="email"><br>
+        <label>password</label><br><i class="bi bi-eye-slash-fill"></i>
+        <input type="text" formControlName="pass"><br>
+        <label>confirm password</label><br>
+        <input type="text" formControlName="confirmPassword"><br>
+    </form>
+</div>

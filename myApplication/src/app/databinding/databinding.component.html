@@ -1,0 +1,18 @@
+<!-- String interpolation-->
+<p>{{data}}</p>
+<div>{{amount}}</div>
+<div>{{test()}}</div>
+
+<!--<div>{{schoolname='holy cross school'}}</div>-->
+<div>{{amount==1900000}}</div>
+<div>{{amount==900000}}</div>
+<!-- property binding-->
+<input type="text" [value]="name"> Enter name<br>
+<br>
+<!-- event binding-->
+<button (click)="clickEvent()">click event</button><br>
+{{clickEventData}}<br>
+<!-- Two way databinding -->
+<input type="text"[(ngModel)]="city">Enter city<br><br>
+Entered city={{city}}
+<button (click)="assignval()">click to assign value</button>
